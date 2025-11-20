@@ -1,6 +1,6 @@
-# Super – Central de Gestão
+# Super Central de Gestão
 
-Bem-vindo(a) ao **Super – Central de Gestão**, um sistema completo para visualização, gerenciamento e análise de dados financeiros.  
+**Super Central de Gestão** é um sistema completo para visualização, gerenciamento e análise de dados financeiros.  
 Este painel oferece métricas essenciais sobre faturamento, cobranças, modalidades de pagamento e indicadores de performance, tudo em uma interface moderna e intuitiva.
 
 ---
