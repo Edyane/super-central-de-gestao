@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd super-central-gestao && npm install && npm run build",
+  "outputDirectory": "super-central-gestao/dist",
+  "installCommand": "cd super-central-gestao && npm install",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
