@@ -25,7 +25,7 @@ O objetivo é permitir decisões rápidas e embasadas através de dados bem orga
 
 Abaixo está a interface atual do dashboard (imagem de referência):
 
-![Dashboard](./Dashboard.PNG)
+![Dashboard](Dashboard.png)
 
 ---
 
