@@ -10,7 +10,7 @@ import Button from './components/ui/Button.vue'
 import Badge from './components/ui/Badge.vue'
 import BarChart from './components/charts/BarChart.vue'
 import DonutChart from './components/charts/DonutChart.vue'
-import { Info, ArrowUp, FileText, TrendingUp, Eye, ArrowRight, Filter, ChevronDown, Bell, Trash2, Calendar, Download, HelpCircle } from 'lucide-vue-next'
+import { Info, ArrowUp, FileText, TrendingUp, Eye, ArrowRight, Filter, ChevronDown, Bell, Trash2, Calendar, Download, HelpCircle, Plus } from 'lucide-vue-next'
 
 // Dados do gráfico de faturamento (31 dias)
 const faturamentoData = ref(Array.from({ length: 31 }, (_, i) => {
@@ -99,7 +99,7 @@ const isAmountVisible = ref(true)
 				<div class="lg:hidden mb-4">
 					<h2 class="text-2xl font-bold text-gray-900 mb-3">Faturamento</h2>
 					<div class="flex items-center justify-between mb-2">
-						<div class="text-4xl font-bold text-gray-900">
+						<div class="text-2xl font-bold text-gray-900">
 							{{ isAmountVisible ? 'R$ 1.249.651,14' : '••••••••••' }}
 						</div>
 						<button @click="isAmountVisible = !isAmountVisible" class="p-2">
@@ -116,7 +116,7 @@ const isAmountVisible = ref(true)
 				<Button class="lg:hidden w-full mb-4 bg-[#0641FC] hover:bg-blue-700 text-white h-12 rounded-lg flex items-center justify-center gap-3 px-4">
 					<span class="font-medium">Nova cobrança</span>
 					<div class="h-8 w-8 rounded-full bg-white flex items-center justify-center">
-						<span class="text-[#0641FC] font-bold text-[12px]">+</span>
+						<Plus class="h-5 w-5 text-[#0641FC] font-bold" />
 					</div>
 				</Button>
 
@@ -323,8 +323,8 @@ const isAmountVisible = ref(true)
 						<CardContent class="pt-4 lg:pt-6 relative">
 							<!-- Ícone de porcentagem no canto superior direito -->
 							<div
-								class="absolute top-4 right-4 h-6 w-6 rounded-full border border-[#D9D9D9] flex items-center justify-center p-4">
-								<span class="text-[#2A2E33] text-xs font-bold">%</span>
+								class="absolute top-2 right-2 lg:top-4 lg:right-4 h-4 w-4 lg:h-6 lg:w-6 rounded-full border border-[#D9D9D9] flex items-center justify-center p-1.5 lg:p-4">
+								<span class="text-[#2A2E33] text-[10px] lg:text-xs font-bold">%</span>
 							</div>
 							<!-- Título -->
 							<div class="text-xs lg:text-sm text-[#2A2E33] mb-2">Reembolsos</div>
@@ -364,8 +364,8 @@ const isAmountVisible = ref(true)
 						<CardContent class="pt-4 lg:pt-6 relative">
 							<!-- Ícone de porcentagem no canto superior direito -->
 							<div
-								class="absolute top-4 right-4 h-6 w-6 rounded-full border border-[#D9D9D9] flex items-center justify-center p-4">
-								<span class="text-[#2A2E33] text-xs font-bold">%</span>
+								class="absolute top-2 right-2 lg:top-4 lg:right-4 h-4 w-4 lg:h-6 lg:w-6 rounded-full border border-[#D9D9D9] flex items-center justify-center p-1.5 lg:p-4">
+								<span class="text-[#2A2E33] text-[10px] lg:text-xs font-bold">%</span>
 							</div>
 							<!-- Título -->
 							<div class="text-xs lg:text-sm text-[#2A2E33] mb-2">Cancelados</div>
@@ -384,8 +384,8 @@ const isAmountVisible = ref(true)
 						<CardContent class="pt-4 lg:pt-6 relative">
 							<!-- Ícone de porcentagem no canto superior direito -->
 							<div
-								class="absolute top-4 right-4 h-6 w-6 rounded-full border border-[#D9D9D9] flex items-center justify-center p-4">
-								<span class="text-[#2A2E33] text-xs font-bold">%</span>
+								class="absolute top-2 right-2 lg:top-4 lg:right-4 h-4 w-4 lg:h-6 lg:w-6 rounded-full border border-[#D9D9D9] flex items-center justify-center p-1.5 lg:p-4">
+								<span class="text-[#2A2E33] text-[10px] lg:text-xs font-bold">%</span>
 							</div>
 							<!-- Título -->
 							<div class="text-xs lg:text-sm text-[#2A2E33] mb-2">Não autorizado</div>
